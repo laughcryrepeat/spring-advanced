@@ -1,4 +1,4 @@
-package hello.advanced.app.v4;
+package hello.advanced.app.v3;
 
 import hello.advanced.trace.TraceStatus;
 import hello.advanced.trace.logtrace.LogTrace;
@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class OrderControllerV3 {
+public class OrderControllerV4 {
 
-    private final OrderServiceV3 orderService;
+    private final OrderServiceV4 orderService;
 
     private final LogTrace trace;
 
-    @GetMapping("/v3/request")
+    @GetMapping("/v4/request")
     public String request(String itemId) {
 
         TraceStatus status = null;
